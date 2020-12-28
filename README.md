@@ -63,7 +63,7 @@ function example_controller(){
 Controller will return JSON response with status code 200. [Read more about functions in PHP Rose](#Functions).
 
 ## Permissions
-Before entering to controller user is verified. If route required permission user token is checked ([go to fast configuration to configure permissions](#Fast-configuration) but firsth read that section). Permissions are realy simple, they are just numbers from 0.
+Before entering into controller user is verified. If route required permission user token is checked ([go to fast configuration to configure permissions](#Fast-configuration) but firsth read that section). Permissions are realy simple, they are just numbers from 0.
 
 Recommended way to look at this:
 - 0 - is for guest, all users having link will have permission to view that route
