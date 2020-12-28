@@ -7,7 +7,7 @@ Or maybe you wanna learn how REST API works in PHP?
 
 ___
 
-1. [Instalation](#Instalation)
+1. [Installation](#Installation)
 2. [How it works](#How-it-works)
 3. [Permissions](#Permissions)
 4. [Functions](#Functions)
