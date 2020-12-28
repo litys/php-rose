@@ -34,20 +34,20 @@ You can use only **GET** and **POST**.
 
 ### Where add routes?
 In file `router.php` in home folder. You can use `get()` and `post()` functions.
-Firsth parameter is your route for request.
-Second parameter is your controller which will run after visit that route.
-Third parameter is not required, it's [permission](#Permissions) parameter. If not given, route will be allowed to visit for guests (authorization for that route will be disabled). That effect can be achieved with sending 0 as third parameter.
+- Firsth parameter is your route for request.
+- Second parameter is your controller which will run after visit that route.
+- Third parameter is not required, it's [permission](#Permissions) parameter. If not given, route will be allowed to visit for guests (authorization for that route will be disabled). That effect can be achieved with sending 0 as third parameter.
 
 For code clarity controllers are held in folder `/controllers`. Just *include_once* group of controllers to `router.php`.
 #### Example:
 
 `get('/example_route','example_controller',1);`
 
-Sending request at `localhost:8000/example_route` will trigger function `example_controller` and that route will be available only for users with permission `1`.
+Sending **GET** request at `localhost:8000/example_route` will trigger function `example_controller` and that route will be available only for users with permission `1`.
 
 `post('/second_example_route','second_example_controller');`
 
-Sending request at `localhost:8000/second_example_route` will trigger function `second_example_controller` and that route will be available for all users (*have permission 0*).
+Sending **POST** request at `localhost:8000/second_example_route` will trigger function `second_example_controller` and that route will be available for all users (*have permission 0*).
 
 ### Where add controllers
 In folder `controllers`. You can create how much you want and organize however you want. In file (group of controllers eg. `controllers/general.php`) you can have how much controlers you want.
