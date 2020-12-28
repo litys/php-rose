@@ -7,12 +7,12 @@ Or maybe you wanna learn how REST API works in PHP?
 
 ___
 
-1. [Instalation](##-Instalation)
-2. [How it works](##-How-it-works)
-3. [Permissions](##-Permissions)
-4. [Functions](##-Functions)
-5. [Fast configuration](##-Fast-configuration)
-6. [What you can touch](##-What-you-can-touch)
+1. [Instalation](#Instalation)
+2. [How it works](#How-it-works)
+3. [Permissions](#Permissions)
+4. [Functions](#Functions)
+5. [Fast configuration](#Fast-configuration)
+6. [What you can touch](#What-you-can-touch)
 
 ___
 
@@ -40,9 +40,9 @@ Third parameter is not required, it's [permission](##-Permissions) parameter. If
 
 For code clarity controllers are held in folder `/controllers`. Just *include_once* group of controllers to `router.php`.
 #### Example:
-`get('/example_route','example_controller',1);`
+`get('/example_route','example_controller',1);` __
 Sending request at `localhost:8000/example_route` will trigger function `example_controller` and that route will be available only for users with permission `1`.
-`post('/second_example_route','second_example_controller');`
+`post('/second_example_route','second_example_controller');` __
 Sending request at `localhost:8000/second_example_route` will trigger function `second_example_controller` and that route will be available for all users (*have permission 0*).
 
 ### Where add controllers
