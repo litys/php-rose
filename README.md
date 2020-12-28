@@ -36,7 +36,7 @@ You can use only **GET** and **POST**.
 In file `router.php` in home folder. You can use `get()` and `post()` functions.
 Firsth parameter is your route for request.
 Second parameter is your controller which will run after visit that route.
-Third parameter is not required, it's [permission](##-Permissions) parameter. If not given, route will be allowed to visit for guests (authorization for that route will be disabled). That effect can be achieved with sending 0 as third parameter.
+Third parameter is not required, it's [permission](#Permissions) parameter. If not given, route will be allowed to visit for guests (authorization for that route will be disabled). That effect can be achieved with sending 0 as third parameter.
 
 For code clarity controllers are held in folder `/controllers`. Just *include_once* group of controllers to `router.php`.
 #### Example:
@@ -60,10 +60,10 @@ function example_controller(){
     ],200);
 };
 ```
-Controller will return JSON response with status code 200. [Read more about functions in PHP Rose](##-Functions).
+Controller will return JSON response with status code 200. [Read more about functions in PHP Rose](#Functions).
 
 ## Permissions
-Before entering to controller user is verified. If route required permission user token is checked ([go to fast configuration to configure permissions](##-Fast-configuration) but firsth read that section). Permissions are realy simple, they are just numbers from 0.
+Before entering to controller user is verified. If route required permission user token is checked ([go to fast configuration to configure permissions](#Fast-configuration) but firsth read that section). Permissions are realy simple, they are just numbers from 0.
 
 Recommended way to look at this:
 - 0 - is for guest, all users having link will have permission to view that route
