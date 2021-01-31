@@ -20,7 +20,7 @@ ___
 1. Clone repo and run *composer install*.
 2. Go to: `/config/database.php` and edit your connection with database
 3. Run `php -S localhost:8000`
-4. Send **GET** Request at `localhost:8000\setup`
+4. Send **GET** Request at `localhost:8000/setup`
 
 That last point will create table for users (required for authorization).
 Now you have working REST API backend with simple functions. 
