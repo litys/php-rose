@@ -1,7 +1,7 @@
 # PHP Rose
 Micro **REST API** framework written in pure PHP for micro and small projects. Create rest api blazing fast with JWT authentication.
 
-Major props:
+## Why PHP Rose? (Major props):
 - Fast and easy working with database
 - Clear routing (get request -> check permission -> run controller)
 - Incredibly simple permissions
