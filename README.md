@@ -72,7 +72,7 @@ Recommended way to look at this:
 - 2 - is for user
 - 3 - is for eg. smaller user
 
-User with permission **2** can view all routes for permission **2,3,4,5** etc. But can't view route with permission **1**. The same applies to user with permission **3**, user can't view routes with permission **1** and **2** but can view **3,4,5** etc. Routes with permission 0 are available for all permissions and guest (not logged users, without token)
+User with permission **2** can view all routes for permission **2,3,4,5** etc. But can't view route with permission **1**. The same applies to user with permission **3**, user can't view routes with permission **1** and **2** but can view **3,4,5** etc. Routes with permission 0 are available for all users and guests (not logged users, without token)
 
 **Token is sending in Headers**. Set header name at **Token**.
 
