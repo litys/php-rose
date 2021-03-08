@@ -1,9 +1,10 @@
 # PHP Rose
 Micro **REST API** framework written in pure PHP for micro and small projects. Create rest api blazing fast with JWT authentication.
 
-You dont have time for learning backend but you know how do things in PHP?
-Or maybe you wanna learn how REST API works in PHP?
-**PHP Rose** is for small project and for some, to learn how it works. 
+Major props:
+- Fast and easy working with database
+- Clear routing (get request -> check permission -> run controller)
+- Incredibly simple permissions
 
 ___
 
