@@ -12,6 +12,3 @@ $method = $_SERVER['REQUEST_METHOD'];
 $request = $_SERVER['REQUEST_URI'];
 
 ROUTING::handle_request($method, $request);
-
-#TODO dodac by w kazdym request byla jakas indentyfikacja ze token wygasl
-#TODO dodac refresh tokena
